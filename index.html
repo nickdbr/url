@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wat hebben we gegeten?</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='./style/main.css'>
+    <script src='./script/appscript.js'></script>
+</head>
+<body>
+    <div class="form_eten">  
+
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbykMFbVZkKQYtc710zYu1yJA81zCBgG1ves-QTy6FJgobcRqJRDo3PxVF5yqEwa4qw5/exec">
+            <h1>Wat hebben we vandaag gegeten?</h1>
+            <p>Maaltijd</p>
+            <input name="Maaltijd" type="text" placeholder="Wat heb je gegeten?" required>
+            <p>Specificatie</p>
+            <input name="Specificatie" type="text" placeholder="Licht nader toe" required>
+
+            <!--<fieldset>
+                <legend>Hoe?</legend>
+                <div id="box_hoe">
+                <input type="radio" id="zelf" name="hoe" value ="zelf" checked/> <label for="zelf">Zelf gemaakt</label></div>
+                <div id="box_hoe">
+                <input type="radio" id="uit" name="hoe" value ="uit" /> <label for="uit">Uit eten</label></div>
+                <div id="box_hoe">
+                <input type="radio" id="besteld" name="hoe" value ="besteld" /> <label for="besteld">Besteld</label>
+                </div>
+            </fieldset> -->
+            <p>Hoe is het gemaakt?</p>
+            <input name="Hoe" type="text" placeholder="Zelf / uit eten / besteld?">
+            <p>Link naar het gerecht?</p>
+            <input name="Website" type="text" placeholder="Link naar het gerecht">
+            <p>Was het gezond?</p>
+            <input name="Gezond" type="text" placeholder="Vul maar in">
+
+            <!--<fieldset>
+                <legend>Was het gezond?</legend>
+                <div id="box_hoe">
+                <input type="radio" id="g_ja" name="gezond" value ="g_ja" checked/> <label for="zelf">Ja</label></div>
+                <div id="box_hoe">
+                <input type="radio" id="g_nee" name="gezond" value ="g_nee" /> <label for="g_nee">Nee</label></div>
+            </fieldset> -->
+            <button class="button-6" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
